@@ -14,13 +14,8 @@
                 <div ui-sref="Home" class="navBarLink hvr-bob">Portfolio</div>|
                 <div ui-sref="About" class="navBarLink hvr-bob">About</div>
             </div>
-            <i id="barsicon" class="fa fa-bars alignvertical"></i>
-<!--
-            <div id="navBarLinksDiv2" class="alignvertical">
-                <div ui-sref="Home" class="navBarLink">Portfolio</div>
-                <div ui-sref="About" class="navBarLink">About</div>
-            </div>
--->
+            <i ui-sref="Home" ui-sref-active="active" class="fa fa-briefcase alignvertical barsicon"></i>
+            <i ui-sref="About" ui-sref-active="active" class="fa fa-info-circle alignvertical barsicon"></i>
         </header>
         <ui-view>
             

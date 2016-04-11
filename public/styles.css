@@ -78,10 +78,16 @@ ui-view {
     transform: translateY(-50%);
 }
 
-#barsicon {
+.barsicon {
     position: absolute;
-    right: 20px;
-    visibility: visible;
+    right: 30px;
+/*    visibility: visible;*/
+    display: block;
+    font-size: 70;
+}
+
+.active {
+    display: none;
 }
 
 .mainSection {
@@ -365,7 +371,7 @@ ui-view {
         margin-top: 200px;
     }
     .myHexagon:hover {
-        transform: scale(1.6);
+        transform: scale(1.55);
     }
     header {
         height: 100px;
@@ -373,7 +379,7 @@ ui-view {
     #Title {
         font-size: 60;
     }
-    #barsicon {
+    .barsicon {
         font-size: 50;
     }
     .navBarLink {
@@ -412,8 +418,9 @@ ui-view {
     .myHexagon:hover {
         transform: scale(1.15);
     }
-    #barsicon {
-        visibility: hidden;
+    .barsicon {
+/*        visibility: hidden;*/
+        display: none;
     }
     #navBarLinksDiv {
         visibility: visible;

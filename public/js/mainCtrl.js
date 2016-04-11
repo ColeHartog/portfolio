@@ -1,5 +1,5 @@
-angular.module('portfolio').controller('mainCtrl', function($scope){
+angular.module('portfolio').controller('mainCtrl', function($scope, $state){
     
-    $scope.test = "hello world";
+    
     
 })
