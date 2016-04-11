@@ -1,0 +1,1938 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Homenaje;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 8%;
+    padding: 1% 0% 1% 1.5%;
+    min-height: 80px;
+    background-color: #978693;
+}
+
+input {
+    outline: none;
+}
+
+select {
+    outline: none;
+}
+
+#mainLogo {
+    height: 100%;
+}
+
+#routeSelectSpan {
+    text-align: right;
+    width: 100%;
+    vertical-align: bottom;
+    font-size: 2.5em;
+    position: absolute;
+    right: 0;
+    top: 2%;
+}
+
+.routes {
+    margin: -1% 2% 0 0%;
+    padding-top: 5px;
+}
+
+.routes:hover {
+    cursor: pointer;
+}
+
+#ui {
+    width: 100%;
+    height: 92%;
+    overflow: hidden;
+}
+
+#homeBody {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/home_image.jpg');
+    background-position: right;
+    background-size: cover;
+    color: white;
+    padding-top: 10%;
+}
+
+#aboutBody {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/about-us.jpg');
+    background-position: right;
+    background-size: cover;
+    color: white;
+    padding-top: 5%;
+}
+
+#reservationBody {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/reservation_images.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-top: 5%;
+}
+
+#serviceBody {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/services.jpg');
+    background-position: right;
+    background-size: cover;
+    color: white;
+    padding-top: 5%;
+}
+
+#teamBody {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/team.jpg');
+    background-position: right;
+    background-size: cover;
+    color: white;
+    padding-top: 5%;
+}
+
+#productBody {
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    background-image: url('images/product.jpg');
+    background-position: right;
+    background-size: cover;
+    color: white;
+}
+
+#contactBody {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/DSC_2677.JPG');
+    background-position: top;
+    background-size: cover;
+    color: white;
+    padding-top: 5%;
+}
+
+#appointmentsBody {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/prettywhitedress.jpg');
+    background-position: top;
+    background-size: cover;
+    color: white;
+    padding-top: 5%;
+    display: flex;
+}
+
+#ECET {
+    text-align: center;
+    width: 35%;
+    min-width: 660px; 
+    height: 15%;
+    margin-left: 10%;
+    font-size: 5em;
+}
+
+#WAAS {
+    width: 30%;
+    min-width: 575px;
+    margin-top: 1%;
+    margin-left: 12.5%;
+    text-align: center;
+    font-size: 1.7em;
+    line-height: 1.3em;
+}
+
+#homeLogo {
+    margin: 4% 0 0 24%;
+    width: 8%;
+    min-width: 145px;
+}
+
+#AboutUs {
+    margin-left: 10%;
+    font-size: 5em;
+    color: #978693;
+    text-shadow: 2px 2px 10px rgba(0,0,0, 1);
+    
+}
+
+#aboutInfo {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 2%;
+    background-color: rgba( 255, 255, 255, .7);
+    color: #222;
+    padding: 2.5%;
+    font-size: 2em;
+    text-indent: 1%;
+    line-height: 1.3em;
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+}
+
+#Products {
+    margin-left: 10%;
+    font-size: 5em;
+    color: #978693;
+    text-shadow: 2px 2px 10px rgba(0,0,0, 1);
+}
+
+#ProductDiv {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 2%;
+    padding: 2%;
+    background-color: rgba( 255, 255, 255, .7);
+    font-size: 1.75em;
+    text-indent: 1%;
+    color: #222;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+    border-radius: 7px;
+}
+
+#productInfo {
+    padding-bottom: 6%;
+    font-size: 1em;
+    line-height: 1.3em;
+    border-image: url(images/dark_embroidery.png) 15 round;
+    border-image-width: 0 0 15px 0;
+}
+
+#productNamesDiv {
+    margin-top: 6%;
+    text-align: center;
+}
+
+.productNames {
+    padding: 1% 0 0 0;
+    margin: 0 3% 0 3%;
+    text-indent: 0;
+}
+
+.productNames:hover {
+    cursor: pointer;
+}
+
+.selectedProduct {
+    color: #978693;
+}
+
+#productInfoDiv {
+    margin-top: 6%;
+}
+
+#productDesc {
+    display: inline-block;
+    width: 64%;
+    padding-right: 2%;
+    vertical-align: top;
+    line-height: 1.3em;
+}
+
+#productImg {
+    width: 34%;
+    display: inline-block;
+}
+
+#Services {
+    margin-left: 10%;
+    font-size: 5em;
+    color: #978693;
+    text-shadow: 2px 2px 10px rgba(0,0,0, 1);
+}
+
+#ServicesDiv {
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 2%;
+    padding: 2%;
+    background-color: rgba( 255, 255, 255, .7);
+    font-size: 1.75em;
+    text-indent: 1%;
+    color: #222;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+    line-height: 1.3em;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+#servicesInfo {
+    padding-bottom: 6%;
+    border-image: url(images/dark_embroidery.png) 15 round;
+    border-image-width: 0 0 15px 0;
+}
+
+#serviceNamesDiv {
+    padding-top: 5%;
+    text-align: center;
+    text-indent: 0;
+}
+
+.serviceNames {
+    padding-top: 1%;
+    margin: 0 1% 0 1%;
+}
+
+.serviceNames:hover {
+    cursor: pointer;
+}
+
+.selectedService {
+    color: #978693;
+}
+
+#serviceListDiv {
+    padding-top: 5%;
+    padding-bottom: -2%;
+}
+
+.servicesList {
+    padding: 1% 0 1% 0;
+    border-bottom: 1px solid #222;
+}
+
+#ContactUs {
+    font-size: 5em;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    color: #978693;
+    text-shadow: 2px 2px 10px rgba(0,0,0, 1);
+}
+
+#contactInputDiv {
+    margin: 0% 0 0 10%;
+    height: 40%;
+    width: 40%;
+    display: inline-block;
+}
+
+.contactInput {
+    width: 100%;
+    margin-bottom: 2%;
+    height: 30%;
+    font-size: 3em;
+    padding: 1% 1% 1% 3%;
+    color: #222;
+    background-color: rgba( 255, 255, 255, .8);
+    outline: none;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+    border-radius: 7px;
+}
+
+#inputSubmitButt {
+    background-color: #978693;
+    color: rgba(2, 2, 2, .5);
+    padding: 3% 1%;
+    text-align: center;
+    font-size: 3em;
+    transition: all .25s ease;
+    height: 30%;
+    border-radius: 7px;
+    transition: all .5s ease;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+}
+
+#inputSubmitButt:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+#SIDIV {
+    display: inline-block;
+    vertical-align: top;
+    height: 54%;
+    width: 49%;
+    position: relative;
+}
+
+.salonInformation {
+    line-height: 1.5em;
+    font-size: 1.5em;
+    background-color: rgba( 255, 255, 255, .8);
+    padding: 3%;
+    color: #222;
+    position: absolute;
+    left: 25%;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+    border-radius: 7px;
+}
+
+#Caddress {
+    top: 0;
+}
+
+#SIDHdiv {
+    bottom: 0;
+}
+
+#SIdays {
+    display: inline-block;
+}
+
+#SIhours {
+    padding-left: 30px;
+    display: inline-block;
+}
+
+#OurTeam {
+    font-size: 5em;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    color: #978693;
+    text-shadow: 2px 2px 10px rgba(0,0,0, 1);
+}
+
+#stylistsMainDiv {
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    padding: 2%;
+}
+
+#leadTeamDiv {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding-bottom: 1%;
+}
+
+.leadTeamClass {
+    display: inline-block;
+    flex: 1;
+    height: 100%;
+    margin: 0 2.5% 0 2.5%;
+    background-image: url(images/dark_embroidery.png);
+    overflow: hidden;
+    font-size: 2em;
+    line-height: 2..5em;
+    line-height: 2.5em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, .8);
+    border-radius: 7px;
+}
+
+#teamFalecia {
+    margin-left: 6%;
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+#faleciaInfo {
+    flex: 2;
+    padding: 5% 0 0 0 ;
+    text-align: center;
+    transition: color .25s ease;
+}
+
+#faleciaImg {
+    display: inline-block;
+    background-image: url(images/team/boss33.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    flex: 3;
+}
+
+#faleciaImg:hover {
+    
+}
+
+#faleciaImg:hover ~ #faleciaInfo{
+    color: #978693;
+}
+
+#teamGinni {
+    text-align: left;
+    margin-right: 6%;
+    display: flex;
+}
+
+#ginniImg {
+    display: inline-block;
+    background-image: url(images/team/rsz_fullsizerender-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    flex: 3;
+}
+
+#ginniImg:hover {
+    
+}
+
+#ginniImg:hover ~ #ginniInfo{
+    color: #978693;
+}
+
+#ginniInfo {
+    text-align: center;
+    flex: 2;
+    padding: 5% 0% 0 0%;
+    transition: color .25s ease;
+}
+
+#teamFlex {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 1%;
+}
+
+#stylistTeamDiv {
+    flex: 97;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    background-image: url('images/dark_embroidery.png');
+    white-space: nowrap;
+    border-radius: 7px;
+}
+
+.stylistDiv {
+    display: inline-block;
+    width: 13%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0 1.5% 0 0%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, .8);
+    text-indent: 0;
+    color: #eaeaea;
+    position: relative;
+    left: 0;
+    transition: width .5s ease;
+}
+
+.stylistDiv:hover {
+    cursor: pointer;
+    color: #978693;
+}
+
+.stylistName {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: color .25s ease;
+}
+
+.arrows {
+    text-align: center;
+    flex: 3;
+    font-size: 10em;
+    display: inline-block;
+    text-align: center;
+    color: #222;
+    padding-top: 3%;
+    transition: all .25s ease;
+}
+
+.arrows:hover {
+    cursor: pointer;
+    color: #eaeaea;
+}
+
+#stylistDirectiveDiv {
+    position: absolute;
+    display: fixed;
+    width: 40%;
+    height: 52%;
+    background-color: #222;
+    top: 32.5%;
+    left: 30%;
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .8);
+/*    background-image: url(images/dark_embroidery.png);*/
+    opacity: 1;
+}
+
+#SDDX {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#SDDX:hover {
+    cursor: pointer;
+    color: #978693;
+}
+
+#stylistDirectiveDiv.ng-hide-add, #stylistDirectiveDiv.ng-hide-remove {
+    transition: all .25s ease;
+}
+
+#stylistDirectiveDiv.ng-hide {
+    opacity: 0;
+}
+
+#stylistDirDiv {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    display: flex;
+}
+
+#SDleftColumn {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    padding-right: 2%;
+    flex-direction: column;
+}
+
+#SDrightColumn {
+    flex: 1;
+    height: 100%;
+    padding-left: 2%;
+    text-indent: 2%;
+    font-size: 1.25em;
+    overflow: auto;
+    padding-right: 2%;
+    line-height: 1.3em;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#SDLImg {
+    width: 100%;
+    background-image: url(images/team/missingImage.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    flex: 9;
+}
+#SDLNav {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.SDLNavItems {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5em;
+    align-self: flex-end;
+}
+
+.SDLNavIs {
+    padding-top: 5px;
+}
+
+.SDLNavIs:hover {
+    cursor: pointer;
+}
+
+.SDRSitem {
+    border-bottom: 1px solid #eaeaea;
+    line-height: 1.7em;
+}
+
+.SDRHitems {
+    border-bottom: 1px solid #eaeaea;
+    line-height: 1.7em;
+    font-size: 1.5em;
+}
+
+.selectedType {
+    color: #978693;
+}
+
+.StylistInfoSideDivClass {
+    position: absolute;
+    width: 100%;
+    padding-right: 6%;
+}
+
+#Reservations {
+    margin-left: 10%;
+    font-size: 5em;
+    color: #978693;
+    text-shadow: 2px 2px 10px rgba(0,0,0, 1);
+}
+
+#ReservationChoiceDiv {
+    margin: 2% 10% 0 10%;
+    height: 40%;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .7);
+}
+
+.ReservationSides {
+    flex: 1;
+    height: 100%;
+    text-align: center;
+    font-size: 4em;
+    color: #222;
+    padding-top: 1%;
+    
+}
+
+#ReservationClientSide {
+    padding-right: 1.5%;
+    border-image: url(images/dark_embroidery.png) 5 round;
+    border-image-width: 0 15px 0 0;
+}
+
+
+#ReservationStylistSide {
+    padding-left: 1.5%;
+    line-height: 0;
+}
+
+.ReservationName {
+    line-height: 1em;
+}
+
+#RCButt {
+    background-color: #978693;
+    display: inline-block;
+    font-size: .75em;
+    padding: 2% 4%;
+    margin: 5% 10%;
+    color: rgba(2, 2, 2, .5);
+    transition: color .25s ease;
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+}
+
+#RCButt:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+.RSInputs {
+    margin-top: 3%;
+    width: 50%;
+    font-size: .5em;
+    padding: .1% 1% 0 1%;;
+    color: #222;
+    border: none;
+    line-height: 1em;
+}
+
+#RSLoginButt {
+    line-height: 1em;
+    font-size: .5em;
+    margin: 2% 40%;
+    padding: 1% 2%;
+    background-color: #978693;
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+    color: rgba(2, 2, 2, .5);
+    transition: color .25s ease;
+}
+
+#RSLoginButt:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+#appointmentsLeftColumn {
+    flex: 1;
+    height: 100%;
+    margin: 0 0 2% 10%;
+    display: flex;
+    padding-bottom: 1.5%;
+    flex-direction: column;
+}
+
+#appointmentsRightColumn {
+    flex: 19;
+    height: 100%;
+    width: 10%;
+    margin: 0 10% 0 2%;
+    padding-bottom: 1.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#appointmentsCalanderDiv {
+    font-size: 14px;
+    flex: 1;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+}
+
+#appointmentsStlystListDiv {
+    margin: 10% 0 0 0;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 7px;
+    color: #222;
+    font-size: 1.5em;
+    flex: 19;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#APPBIGcalanderDiv {
+    width: 100%;
+    flex: 1;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+    padding: 2%;
+    color: #222;
+    text-align: center;
+    font-size: 2em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#APPSscrollbarbullshit {
+    overflow: auto;
+    width: 100%;
+    padding: 0% 5% 2% 5%;
+    flex: 1;
+}
+
+.APPstylistListDiv {
+    line-height: 1.5em;
+    font-size: 1.5em;
+    border-bottom: 1px solid #222;
+    transition: all .25s ease;
+    overflow-x: hidden;
+}
+
+.APPstylistListDiv:hover {
+    cursor: pointer;
+    text-indent: 10%;
+}
+
+.APPStylistImg {
+    width: 12%;
+    border-radius: 7px;
+    vertical-align:middle;
+}
+
+.selectedStylist {
+    color: #978693;
+}
+
+#APPBCdayname {
+    font-size: 1.5em;
+    position: relative;
+    width: 100%;
+    -webkit-user-select: none;
+    flex: 1;
+}
+
+.APPBCdaynamearrows {
+    padding: 0 2%;
+    transition: color .25s ease;
+    position: absolute;
+}
+
+.APPBCdaynamearrows:hover {
+    cursor: pointer;
+    color: #978693;
+}
+
+#leftAngle {
+    left: 32%;
+}
+
+#rightAngle {
+    left: 62%;
+}
+
+#APPBCCDiv {
+    flex: 12;
+    width: 100%;
+    height: inherit;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.calanderSlot {
+    display: inline-block;
+/*    flex: 1;*/
+    width: 20%;
+    height: 200%;
+    border: 1px solid #222;
+    border-right: 0;
+}
+
+#APPBCCDiv::-webkit-scrollbar {
+    
+}
+
+#APPBCCDiv::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.slotName {
+    height: 3%;
+    padding-top: 1%;
+    background-color: #636263;
+    color: rgb(253,253,253);
+    border-bottom: 1px solid #222;
+    z-index: 5;
+}
+
+.calanderSlot:last-child {
+    border-right: 1px solid #222;
+}
+
+.slotAppointments {
+    background-image: url(images/squared_metal.png);
+    height: 97%;
+    width: 100%;
+    font-size: .5em;
+    line-height: 1em;
+    position: relative;
+}
+
+.appointment {
+    position: absolute;
+    background-color: #4A6344;
+    height: 5%;
+/*    border-radius: 7px;*/
+    width: 100%;
+    top: 0%;
+/*    box-shadow: 0px 3px 5px rgba(0,0,0,.5);*/
+    text-align: left;
+    padding: 5%;
+    line-height: 1.5;
+    color: rgb(253, 253, 253);
+    font-size: 1.1em;
+    outline: 1px solid #222;
+}
+
+.times {
+    position: relative;
+    border-bottom: 1px dashed rgba(2, 2, 2, .25);;
+    height: 5%;
+    color: rgba(2, 2, 2, .7);
+}
+
+.times:last-child {
+    border-bottom: 1px solid #222;
+}
+
+.selectedSlot {
+    width: 50%;
+}
+
+.selectedSlot > .slotAppointments > .appointment{
+    padding: 2%;
+}
+
+.selectedSlot > .slotName {
+    padding-top: .5%;
+}
+
+#addNewAppDiv {
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    color: rgba(2,2,2,.5);
+    font-size: .5em;
+    background-color: #978693;
+    padding: .75%;
+    transition: color .25s ease;
+    border-radius: 7px;
+}
+
+#addNewAppDiv:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+#gototoday {
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    right: 10%;
+    color: rgba(2,2,2,.5);
+    font-size: .5em;
+    background-color: #978693;
+    padding: .75%;
+    transition: color .25s ease;
+    border-radius: 7px;
+}
+
+#gototoday:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+#addAppDiv {
+    color: rgb(253, 253, 253);
+    padding: 3%;
+    
+    z-index: 1;
+    position: fixed;
+    top: 35%;
+    left: 42.35%;
+    width: 30%;
+    height: 50%;
+    background-color: #222;
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+}
+
+#addAppX {
+    position: absolute;
+    right: 1.5%;
+    top: 2%;
+    transition: color .25s ease;
+}
+
+#addAppX:hover {
+    cursor: pointer;
+    color: #978693;
+}
+
+.AAinput {
+    height: 7%;
+    width: 20%;
+    padding: 0 .5%;
+    font-size: 1.3em;
+    color: #222;
+}
+
+#clientSelection {
+    font-size: 1.5em;
+    padding-left: 1%;
+    width: 30%;
+    height: 8%;
+}
+
+#AADstylistDate {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top: 30%;
+}
+
+#stylistSelection {
+    
+}
+
+#calanderSelect {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: .8em;
+}
+
+#serviceSelection {
+    width: 20%;
+}
+
+.appselects {
+    font-size: 1.5em;
+    padding: 0 0 0 .5%;
+    margin-top: 4%;
+}
+
+#numbers {
+    width: 20%;
+}
+
+#newClientDiv {
+    position: absolute;
+    right: 10%;
+    top: 11.25%;
+    width: 50%;
+    height: 25%;
+    text-align: right;
+}
+
+.newCI {
+    font-size: 1.25em;
+    margin-left: 10%;
+    margin-bottom: 4%;
+    width: 40%;
+}
+
+#newCSubmit {
+    background-color: #978693;
+    width: 40%;
+    padding: 4%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    border-radius: 7px;
+    color: rgba(2, 2, 2, .5);
+    transition: color .25s ease;
+}
+
+#newCSubmit:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+#createAppButt {
+    margin-top: 30%;
+    padding: 1% 2%;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #978693;
+    border-radius: 7px;
+    color: rgba(2, 2, 2, .5);
+    transition: color .25s ease;
+}
+
+#createAppButt:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+#callToday {
+    width: 40%;
+    height: 30%;
+    text-align: center;
+    font-size: 3.5em;
+    line-height: 2em;
+    padding-top: 2%;
+    position: absolute;
+    top: 31.5%;
+    left: 30%;
+    background-image: url(images/dark_embroidery.png);
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+#callToday.ng-hide {
+    opacity: 0;
+    top: 10%;
+}
+
+highlight {
+    color: #978693;
+}
+
+#CTX {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: .5em;
+    transition: color .25s ease;
+}
+
+#CTX:hover {
+    cursor: pointer;
+    color: #978693;
+}
+
+#ALBody {
+    background-image: url(images/desk.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#adminloginDiv {
+    width: 40%;
+    height: 25%;
+    background-color: rgba(253, 253, 253, .7);
+    position: relative;
+    top: 40%;
+    left: 30%;
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(2, 2, 2, .5);
+    padding: 1%;
+    text-align: center;
+}
+
+.ALInputs {
+    font-size: 2em;
+    margin-top: 2%;
+    padding-left: 1%;
+}
+
+#ALButt {
+    margin-top: 5%;
+    background-color: #978693;
+    padding: 1%;
+    width: 20%;
+    margin-left: 40%;
+    font-size: 2em;
+    color: rgba(2, 2, 2, .5);
+    transition: color .25s ease;
+}
+
+#ALButt:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+#adminBody {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/desk.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5% 10%;
+}
+
+#mainAdminBody {
+    background-color: #EFDFAE;
+    height: 95%;
+    width: 100%;
+    border-radius: 0 7px 7px 7px;
+    box-shadow: 10px 10px 10px rgba(2, 2, 2, .5);
+    padding: 2%;
+}
+
+#adminNav {
+    width: 100%;
+    height: 5%;
+}
+
+.Atabs {
+    width: 10%;
+    display: inline-block;
+    background-color: #d1c296;
+    height: 100%;
+    font-size: 1.7em;
+    margin-right: .1%;
+    border-radius: 7px 7px 0 0;
+    padding: .25%;
+    text-align: center;
+    border-bottom: 1px solid #222;
+}
+
+.Atabs:hover {
+    cursor: pointer;
+}
+
+#notransview {
+    transition: none;
+    width: 100%;
+    height: 100%;
+}
+
+.selectedTab {
+    border: 0;
+    background-color: #EFDFAE;
+}
+
+#mainAdminBody > img {
+    width: 100%;
+    height: 100%;
+}
+
+#salesBody {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+}
+
+#saleDiv {
+/*    border: 1px solid purple;*/
+    flex: 2;
+    height: 100%;
+    position: relative;
+}
+
+#recentSalesDivScrollBarBullshit {
+    flex: 1;
+    height: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    background-image: url(images/squared_metal.png);
+}
+
+#recentSalesDiv {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#saleClientInput {
+    font-size: 2em;
+    padding-left: .5%;
+    border-radius: 7px;
+}
+
+#saleStylistSelect {
+    font-size: 2em;
+    width: 27.75%;
+    border-radius: 7px;
+}
+
+#saleNewClientDiv {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: inline-block;
+}
+
+.saleNC {
+    font-size: 2em;
+/*    margin-bottom: 1%;*/
+    margin-right: 1%;
+    padding-left: 1%;
+    border-radius: 1px;
+}
+
+.saleNC:first-child {
+    border-radius: 7px 7px 0 0;
+}
+
+#saleANC {
+    background-color: #978693;
+    padding: 1%;
+    font-size: 1.5em;
+    text-align: center;
+/*    margin-top: 2%;*/
+    border-radius: 0 0 7px 7px;
+    color: rgba(2, 2, 2, .5);
+    transition: color .25s ease;
+}
+
+#saleANC:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+#salePaymentSelect {
+    font-size: 2em;
+    margin-top: 2%;
+    width: 27.75%;
+    border-radius: 7px;
+}
+
+#productSideDiv {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
+
+#PSsearchDiv {
+    height: 8%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #222;
+}
+
+#productsAreaDiv {
+    height: 84%;
+    background-image: url(images/squared_metal.png);
+}
+
+
+#totalDiv {
+    height: 8%;
+    border-top: 1px solid #222;
+}
+
+#productSearch {
+    font-size: 2em;
+    height: 100%;
+    width: 70%;
+    padding-left: 1%;
+    border-radius: 7px 0 0 0;
+}
+
+#addProductToList {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    text-align: center;
+    padding: 2%;
+    font-size: 1.5em;
+    position: relative;
+    left: 0%;
+    top: 0;
+    width: 30%;
+    background-color: #978693;
+    border-radius: 0 7px 0 0;
+    color: rgba(2, 2, 2, .5);
+    transition: color .25s ease;
+}
+
+#addProductToList:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+.productInCart {
+    width: 100%;
+    height: 10%;
+    font-size: 2em;
+    padding: 1%;
+    display: flex;
+}
+
+.nameAndBrand {
+    flex: 6;
+    padding-top: .5%;
+}
+
+.amountforproduct {
+    flex: 2;
+    text-align: center;
+}
+
+.priceforproduct {
+    flex: 2;
+    text-align: right;
+    padding-top: .5%;
+}
+
+.amountProductNumberInput {
+    width: 80%;
+    font-size: .8em;
+}
+
+.evenProduct {
+    background-color: rgba(253, 253, 253, .7);
+}
+
+#totalDiv {
+    text-align: right;
+    font-size: 2em;
+    background-color: rgba(253, 253, 253, 1);
+    padding: 1% 2%;
+    border-radius: 0 0 7px 7px;
+}
+
+#finalizeSaleButt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 27.75%;
+    height: 9%;
+    padding: 1%;
+    text-align: center;
+    font-size: 2em;
+    background-color: #978693;
+    border-radius: 7px;
+    color: rgba(2, 2, 2, .5);
+    transition: color .25s ease;
+}
+
+#finalizeSaleButt:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+.trashbinProduct {
+    flex: 1;
+    text-align: left;
+    padding-top: 1%;
+}
+
+.trashbinProduct:hover {
+    cursor: pointer;
+    color: #978693;
+}
+
+.salesClass {
+    font-size: 1.5em;
+    padding: 2%;
+    width: 100%;
+    background-color: rgba(2, 2, 2, .25);
+    display: flex;
+}
+
+.evenSalesClass {
+    background-color: rgba(253, 253, 253, .25);
+}
+
+.salesClassParts {
+    flex: 1;
+    text-align: center;
+}
+
+#AdminproductBody {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+}
+
+#APCurrentProductsDiv {
+    flex: 2;
+/*    border: 1px solid red;*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1%;
+}
+
+#APCPSearchDiv {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+}
+
+#APCPInputSearch {
+    font-size: 2em;
+    padding-left: 1%;
+    border-radius: 7px;
+}
+
+#APCPExistingDiv {
+    flex: 9;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+#APCPExistingDivActual {
+    width: 100%;
+    height: 90.25%;
+    overflow-y: scroll;
+    background-image: url(images/squared_metal.png);
+    font-size: 2em;
+}
+
+.APCPProductDivClass {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.APCPProductClassEven {
+    background-color: rgba(2, 2, 2, .5);
+}
+
+.APCPProductInfoClass2 {
+    flex: 2;
+}
+
+.APCPProductInfoClass2:hover {
+    cursor: pointer;
+}
+
+.APCPProductInfoClass1 {
+    flex: 1;
+    text-align: right;
+}
+
+.APCPProductInfoClass1:hover {
+    cursor: pointer;
+}
+
+#APAddUpdateProductsDiv {
+    flex: 2;
+    height: 100%;
+    width: 100%;
+    padding: 0 2% 0 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+#APAUAUDiv {
+    flex: 2;
+    text-align: center;
+}
+
+.APAUInputClass {
+    font-size: 2em;
+    padding-left: 1%;
+    margin-bottom: 3%;
+    width: 50%;
+}
+
+.APAUInputClass:nth-child(odd) {
+    border-radius: 7px 0 0 7px;
+}
+
+.APAUInputClass:nth-child(even) {
+    border-radius: 0 7px 7px 0;
+}
+
+.APAUInputClass:nth-child(9) {
+    border-radius: 7px;
+}
+
+#APAUClearInputsButt {
+    background-color: #978693;
+    padding: 2% 3%;
+    margin-top: 10%;
+    font-size: 2em;
+    display: inline-block;
+    border-radius: 7px;
+    color: rgba(2, 2, 2, .5);
+    transition: color .25s ease;
+}
+
+#APAUClearInputsButt:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+#APAUCreateUpdateButt {
+    background-color: #978693;
+    padding: 2% 3%;;
+    font-size: 2em;
+    margin-left: 20%;
+    display: inline-block;
+    border-radius: 7px;
+    color: rgba(2, 2, 2, .5);
+    transition: color .25s ease;
+}
+
+#APAUCreateUpdateButt:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+#APAUNewShipDiv {
+    flex: 1;
+    height: 100%;
+}
+
+.APAUNSInputClass {
+    font-size: 2em;
+    height: 10%;
+    padding-left: 1%;
+    width: 50%;
+}
+
+.APAUNSInputClass:nth-of-type(1) {
+    border-radius: 7px 0 0 7px;
+}
+
+.APAUNSInputClass:nth-of-type(2) {
+    border-radius: 0 7px 7px 0;
+}
+
+.APAUNSButts {
+    background-color: #978693;
+    display: inline-block;
+    padding: 2%;
+    font-size: 2em;
+    border-radius: 7px;
+    color: rgba(2, 2, 2, .5);
+    transition: color .25s ease;
+    margin: 9% 11% 0 11%;
+}
+
+.APAUNSButts:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+#APtodaysSoldProductsDiv {
+    flex: 1;
+    height: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    background-image: url(images/squared_metal.png);
+}
+
+#APRmainDiv {
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+}
+
+#APRBodyDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#ClientReportSideDiv {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-right: 1%;
+}
+
+#CRSReportSide {
+    flex: 3;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#CRSRSCalander {
+    display: inline-block;
+}
+
+#CRSRSChartDiv {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#piechartRebook {
+    width: 100%;
+    height: 100%;
+}
+
+#CRSListSide {
+    flex: 2;
+    height: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    
+}
+
+#CRSListDiv {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-image: url(images/squared_metal.png);
+}
+
+.CRSLSClientDiv {
+    padding: 2%;
+    font-size: 1.5em;
+    color: #222;
+    width: 100%;
+    background-color: rgba(2, 2, 2, .25);
+}
+
+.CRSLSClientDivEven {
+    background-color: rgba(253, 253, 253, .25);
+}
+
+#SalesReportsSideDiv {
+    flex: 1;
+    height: 100%;
+    padding-left: 1%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+#SRSSelectionSide {
+    flex: 1;
+    text-align: center;
+}
+
+#SRSSSCalander {
+    display: inline-block;
+    margin-bottom: 10%;
+}
+
+.SRSSbutts {
+    font-size: 2em;
+    background-color: #978693;
+    border-radius: 7px;
+    width: 40%;
+    margin: 10% auto;
+    padding: 2% 4%;
+    color: rgba(2, 2, 2, .5);
+    transition: color .25s ease;
+}
+
+.SRSSbutts:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+#SRSListSide {
+    flex: 1;
+    height: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-left: 4%;
+    background-image: url(images/squared_metal.png);
+}
+
+#SRSLSListDiv {
+     width: 100%;
+    height: 95%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#SRSLSTotalDiv {
+    width: 100%;
+    height: 5%;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 0 6%;
+    background-color: rgba(253, 253, 253, 1);
+    border-top: 1px solid #222;
+}
+
+.SRSLSLClass {
+    width: 100%;
+    padding: 2%;
+    font-size: 1.25em;
+    position: relative;
+    padding-bottom: 12%;
+    background-color: rgba(2, 2, 2, .25);
+}
+
+.SRSLSLClassEven {
+    background-color: rgba(253, 253, 253, .25);
+}
+
+.salesClassParts2 {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.SRSLSLProductClass {
+    font-size: .75em;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.SRSLSLPCPrice {
+    display: inline-block;
+    position: absolute;
+    right: 15%;
+}
+
+.SRSLSLSaleTotal {
+    position: absolute;
+    right: 14.5%;
+    margin-top: 2%;
+}
+
+.appointmentX {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: rgba(253, 253, 253, 1);
+    transition: color .25s ease;
+    z-index: 1;
+}
+
+.appointmentX:hover {
+    cursor: pointer;
+    color: rgba(2, 2, 2, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}
+
+
+
+
+/* Overline From Center */
+.hvr-overline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-overline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  top: 0;
+  background: #BCB3A3;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+	transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-leave {
+  opacity: 1;
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
