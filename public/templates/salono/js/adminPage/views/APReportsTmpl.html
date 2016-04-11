@@ -1,0 +1,55 @@
+<div id="APRmainDiv">
+    <div id="APRBodyDiv">
+        <div id="ClientReportSideDiv">
+            <div id="CRSReportSide">
+                <div id="CRSRSCalander"></div>
+                <div id="CRSRSChartDiv">
+                    <pie-chart-dir ng-if="(newClients && rebookedClients)" id="piechartRebook" new-clients="newClients" rebooked-clients="rebookedClients"></pie-chart-dir>
+                </div>
+            </div>
+            <div id="CRSListSide">
+                <div id="CRSListDiv">
+                    <div class="CRSLSClientDiv" ng-repeat="client in newClients" ng-class="{CRSLSClientDivEven: $index%2 === 1}">
+                        {{client.firstname}} {{client.lastname}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="SalesReportsSideDiv">
+            <div id="SRSSelectionSide">
+                <div id="SRSSSCalander"></div>
+                <div class="SRSSbutts" ng-click="getSalesDMY('day')">Day</div>
+                <div class="SRSSbutts" ng-click="getSalesDMY('month')">Month</div>
+                <div class="SRSSbutts" ng-click="getSalesDMY('year')">Year</div>
+            </div>
+            <div id="SRSListSide">
+                <div id="SRSLSListDiv">
+                    <div class="SRSLSLClass" ng-repeat="sale in salesArray track by $index" ng-class="{SRSLSLClassEven: $index%2 === 1}">
+                        <div class="salesClassParts2">   
+                            {{sale.client.firstname}} {{sale.client.lastname}}
+                        </div>
+                        <div class="salesClassParts2">   
+                            {{sale.stylist.firstname}} {{sale.client.lastname}}
+                        </div>
+                        <div class="salesClassParts2">   
+                            {{makeTimeReadable(sale.date)}}
+                        </div><br>
+                        <div class="SRSLSLProductClass" ng-repeat="product in sale.products track by $index">
+                            ({{product.amount}}) 
+                            {{product.product.name}}, {{product.product.brand}} 
+                            <div class="SRSLSLPCPrice">
+                                {{product.product.price*product.amount}}
+                            </div>
+                        </div>
+                        <div class="SRSLSLSaleTotal">
+                            Total Sale: ${{totalOfProducts(sale.products)}}
+                        </div>
+                    </div>
+                </div>
+                <div id="SRSLSTotalDiv">
+                    Total: ${{totalSales()}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
