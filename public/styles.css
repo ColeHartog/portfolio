@@ -50,6 +50,10 @@ ui-view {
     visibility: hidden;
 }
 
+#navBarLinksDiv:hover {
+    cursor: default;
+}
+
 #navBarLinksDiv2 {
     display: inline-block;
     vertical-align: top;
@@ -61,7 +65,7 @@ ui-view {
 
 .navBarLink {
     display: inline-block;
-    margin-left: 100px;
+    margin: 0 50px;
 }
 
 .navBarLink:hover{
@@ -148,7 +152,7 @@ ui-view {
 }
 
 #iconsdiv {
-    width: 40%;
+/*    width: 40%;*/
     margin: 0 auto;
     margin-top: 100px;
     text-align: center;
@@ -378,6 +382,27 @@ ui-view {
     #navBarLinksDiv2 {
         right: 20px;
     }
+    #information {
+        width: 80%;
+        margin-top: 150px;
+    }
+    #information > p {
+        font-size: 70;
+    }
+    #iconsdiv {
+        margin-top: 150px;
+    }
+    .ai {
+        font-size: 100;
+    }
+    #phone, #email {
+        opacity: 1;
+        font-size: 70;
+        margin-top: 100px;
+    }
+    #email {
+        margin-top: 50px;
+    }
 }
 
 @media (min-width: 1035px){
@@ -396,6 +421,7 @@ ui-view {
     #Title {
         margin-left: 20%;
     }
+
 }
 
 @media (min-width: 1485px){
