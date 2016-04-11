@@ -177,6 +177,10 @@ ui-view {
     cursor: pointer;
 }
 
+.fa-file {
+    font-size: 40;
+}
+
 .fa-mobile:hover ~ #phone {
     opacity: 1;
 }
