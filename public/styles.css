@@ -90,6 +90,10 @@ ui-view {
     flex-direction: row;
 }
 
+#noflex {
+    display: block;
+}
+
 .f1 {
     flex: 1;
     height: 100%;
@@ -123,6 +127,70 @@ ui-view {
 
 .fa-globe:hover, .fa-github:hover {
     color: #366F9E;
+}
+
+#information {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 300px;
+    text-align: center;
+    color: #222;
+    display: block;
+}
+
+#information:hover {
+    cursor: default;
+}
+
+#information > p {
+    font-size: 30;
+    font-weight: bold;
+}
+
+#iconsdiv {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.ai {
+    font-size: 50;
+    color: #222;
+    margin: 0 50px;
+    transition: all .5s ease;
+}
+
+.ai:hover {
+    color: #366F9E;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.fa-mobile:hover ~ #phone {
+    opacity: 1;
+}
+
+.fa-envelope-o:hover ~ #email {
+    opacity: 1;
+}
+
+#phone {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+#email {
+    margin-top: -65px;
+    text-align: center;
+    font-size: 50;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity .5s ease;
 }
 
 .myHexagon {
