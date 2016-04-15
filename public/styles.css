@@ -18,7 +18,7 @@ body {
     background: url(imgs/clouds.png);
     background-repeat:  no-repeat;
     background-position: center;
-    background-size: auto 101%;
+    background-size: cover 101%;
     border: none;
 }
 
@@ -442,6 +442,32 @@ ui-view {
     #Title {
         margin-left: 20%;
     }
+    ui-view.ng-enter, ui-view.ng-leave {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    transition:all 1s ease;
+    }
+
+    ui-view.ng-leave {
+        opacity: 1;
+        top: 50px;
+    }
+
+    ui-view.ng-leave-active {
+        opacity: 0;
+        top: 500px;
+    }
+
+    ui-view.ng-enter {
+        opacity: 0;
+        top: -450px;
+    }
+
+    ui-view.ng-enter-active {
+        opacity: 1;
+        top: 50px;
+}
 
 }
 
@@ -538,30 +564,5 @@ ui-view {
     top: 50px;
 }
 
-ui-view.ng-enter, ui-view.ng-leave {
-    position: absolute;
-    left: 0;
-    top: 50px;
-    transition:all 1s ease;
-}
 
-ui-view.ng-leave {
-    opacity: 1;
-    top: 50px;
-}
-
-ui-view.ng-leave-active {
-    opacity: 0;
-    top: 500px;
-}
-
-ui-view.ng-enter {
-    opacity: 0;
-    top: -450px;
-}
-
-ui-view.ng-enter-active {
-    opacity: 1;
-    top: 50px;
-}
 
