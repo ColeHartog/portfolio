@@ -14,10 +14,19 @@ html, body {
     color: #222;
 }
 
+body {
+    background: url(imgs/clouds.png);
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: auto 101%;
+    border: none;
+}
+
 header {
     outline: 1px solid #222;
     height: 50px;
     position: relative;
+    background-color: #f9f9f9;
 }
 
 a {
@@ -357,6 +366,7 @@ ui-view {
 @media (max-width: 1035px){
     .mainSection {
         flex-direction: column;
+        padding-top: 50px;
     }
     .f1 > .alignvertical {
         position: relative;
@@ -364,7 +374,7 @@ ui-view {
         transform: translateY(0%);
     }
     .myHexagon {
-        transform: scale(1.3);
+        transform: scale(1.2);
         margin: 0 auto;
 /*        margin-top: 50px;*/
     }
@@ -375,7 +385,7 @@ ui-view {
         margin-top: 200px;
     }
     .myHexagon:hover {
-        transform: scale(1.45);
+        transform: scale(1.35);
     }
     header {
         height: 100px;
@@ -521,6 +531,11 @@ ui-view {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
+}
+
+ui-view {
+    position: absolute;
+    top: 50px;
 }
 
 ui-view.ng-enter, ui-view.ng-leave {
